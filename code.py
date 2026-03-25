@@ -15,9 +15,19 @@ def make_button(pin):
     return button
 
 buttons = [
-    (make_button(board.GP15), 60), #C
-    (make_button(board.GP14), 62), #D
-    (make_button(board.GP13), 64), #E
+    (make_button(board.GP0),  60),  # C4
+    (make_button(board.GP1),  61),  # C#4
+    (make_button(board.GP2),  62),  # D4
+    (make_button(board.GP3),  63),  # D#4
+    (make_button(board.GP4),  64),  # E4
+    (make_button(board.GP5),  65),  # F4
+    (make_button(board.GP6),  66),  # F#4
+    (make_button(board.GP7),  67),  # G4
+    (make_button(board.GP8),  68),  # G#4
+    (make_button(board.GP9),  69),  # A4
+    (make_button(board.GP10), 70),  # A#4
+    (make_button(board.GP11), 71),  # B4
+    (make_button(board.GP12), 72),  # C5
 ]
 
 held = [False] * len(buttons)
